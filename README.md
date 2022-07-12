@@ -1,7 +1,7 @@
 # PCGen-Data-Updater
 A script to fetch the most recent sourcebook data for PCGen.
 
-This script updates and overwrites the **data** folder in PCGen with the most recent version from the PCGen Github but preserves any files you may have added in the *homebrew* subfolder.
+This script updates and overwrites the **data** folder in PCGen with the most recent version from the PCGen Github but preserves any files you may have added in the *homebrew* subfolder. You should back that folder up just in case though.
 
 ## Contents of this repo
 7z.exe and 7za.exe - Portable 7zip to use for scripting
