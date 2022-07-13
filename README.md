@@ -7,19 +7,18 @@ Due to the process of downloading the entire PCGen repo as a step in this script
 
 ## Dependencies
 - **Windows** 
-      - 7za.exe - Portable 7zip to use for scripting. The link to this binary can be found at https://www.7-zip.org/download.html (You're looking for the .7z file with the description "7-Zip Extra: standalone console version, 7z DLL, Plugin for Far Manager") Extract the .7z archive and copy 7za.exe file to your PCGen folder. If you don't know whether to use the x64 version of the file, check if your Windows installation is 32 or 64 bit. 64 bit installations hsould use the x64 version of the file.
+      - No dependencies required. All hail Powershell.
 - **Linux**
       - Git, Rsync
       
 ## Instructions (Windows)
-1) Download 7za.exe (see Dependecies) and place 7za.exe ***directly*** in your PCGen folder. (Link to 7za.exe above)
-2) Download the UpdateData.bat script file from here and also place it ***directly*** in your PCGen folder. (See Downloading files from Github below)
-3) Run UpdateData.bat
-4) Run UpdateData.bat again when needed.
+1) Download the UpdateData.bat script file from here and place it ***directly*** in your PCGen folder. (See Downloading files from Github below)
+2) Run UpdateData.bat
+3) Run UpdateData.bat again when needed.
 ## Instructions (Linux)
 1) Download the UpdateData.sh script file from here and also place it ***directly*** in your PCGen folder. (See Downloading files from Github below)
-2) Make the sh file executable (**chmod u+x UpdateData.sh**)
-3) Run UpdateData.sh
+2) Make the .sh file executable (**chmod u+x UpdateData.sh**)
+3) Run UpdateData.sh followed by the variables for your temporary directory and your main pcgen directory. (For example: **bash UpdateData.sh /tmp /home/blyatbeauty/pcgen**)
 4) Run UpdateData.sh again when needed.
 
 ## Downloading files from Github
@@ -34,6 +33,7 @@ The script
 3) cleans up after itself, deleting the PCGen master repo from your system.
       
 ## Troubleshooting
-1) Make sure the script (and 7za.exe if you're on Windows) are placed directly in your PCGen folder. If they are in a subfolder, the script will not run correctly.
+1) Make sure the script is placed directly in your PCGen folder. If it is in a subfolder, the script will not run correctly.
 2) For Linux users, make sure that you have the appropriate permissions to run the script.
 3) For Linux users, use bash to run the script (**bash UpdateData.sh**)
+4) For Linux users, ensure that you are using the correct paths as your variables.
