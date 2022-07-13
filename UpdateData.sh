@@ -23,4 +23,4 @@ else
         cd pcgen-master && git pull || { echo "ERROR updating repository, aborting!"; exit 4; }
 fi
 
-rsync -av --progress "$WORKDIR/pcgen-master/data/" "$DISTDIR/data/" || { echo "ERROR syncing updates, aborting!"; exit 8; }
+rsync -s -av --protect-args --progress "$WORKDIR/pcgen-master/data/" "$DISTDIR/data/" || { echo "ERROR syncing updates, aborting!"; exit 8; }
