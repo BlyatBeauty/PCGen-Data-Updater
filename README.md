@@ -7,7 +7,7 @@ Due to the process of downloading the entire PCGen repo as a step in this script
 
 ## Dependencies
 - **Windows** 
-      - 7za.exe - Portable 7zip to use for scripting. The link to this binary can be found at https://www.7-zip.org/download.html (You're looking for the .7z file with the description "7-Zip Extra: standalone console version, 7z DLL, Plugin for Far Manager") Extract the 
+      - 7za.exe - Portable 7zip to use for scripting. The link to this binary can be found at https://www.7-zip.org/download.html (You're looking for the .7z file with the description "7-Zip Extra: standalone console version, 7z DLL, Plugin for Far Manager") Extract the .7z archive and copy 7za.exe file to your PCGen folder. If you don't know whether to use the x64 version of the file, check if your Windows installation is 32 or 64 bit. 64 bit installations hsould use the x64 version of the file.
 - **Linux**
       - Git, Rsync
       
