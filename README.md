@@ -15,10 +15,12 @@ Due to the process of downloading the entire PCGen repo as a step in this script
 1) Download the UpdateData.bat script file from here and place it ***directly*** in your PCGen folder. (See Downloading files from Github below)
 2) Run UpdateData.bat
 3) Run UpdateData.bat again when needed.
+
 ## Instructions (Linux)
 1) Download the UpdateData.sh script file from here and also place it ***directly*** in your PCGen folder. (See Downloading files from Github below)
 2) Make the .sh file executable (**chmod u+x UpdateData.sh**)
-3) Run UpdateData.sh followed by the variables for your temporary directory and your main pcgen directory. (For example: **bash UpdateData.sh /tmp /home/blyatbeauty/pcgen**)
+3) Run UpdateData.sh followed by the variables for your temporary directory and your main pcgen directory 
+![image](https://user-images.githubusercontent.com/66367898/178808020-3ddbef30-2647-4119-8ee0-03a5566b77b6.png) like this
 4) Run UpdateData.sh again when needed.
 
 ## Downloading files from Github
