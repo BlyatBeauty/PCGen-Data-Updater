@@ -39,3 +39,4 @@ The script
 2) For Linux users, make sure that you have the appropriate permissions to run the script.
 3) For Linux users, use bash to run the script (**bash UpdateData.sh**)
 4) For Linux users, ensure that you are using the correct paths as your variables.
+5) For Linux users, ensure that the paths you're using don't have spaces in the name. Spare yourselves from the headache that we experienced figuring that one out. Even with quotes, Rsync just struggles with spaces in your paths.
