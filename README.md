@@ -25,7 +25,7 @@ Due to the process of downloading the entire PCGen repo as a step in this script
 
 ## Downloading files from Github
 1) Click on the file you want (UpdateData.bat or UpdateData.sh)
-2) Right-click on the Raw button, then left click on Save Link As or Save File As (depending on your browser)
+2) Right-click on the Raw button, then left click on Save Link As or Save File As or Save Page As (depending on your browser)
 3) Save the file ***directly*** to your PCGen folder.
 
 ## Ok but what does it do:
