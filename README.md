@@ -1,4 +1,4 @@
-# PCGen-Data-Updater
+# PCGen Data Updater
 A script to fetch the most recent sourcebook data for PCGen.
 
 This script updates and overwrites the **data** folder in PCGen with the most recent version from the PCGen Github but preserves any files you may have added in the *homebrew* or *customsources* subfolder. You should back those folders up just in case though.
