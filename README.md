@@ -5,6 +5,13 @@ This script updates and overwrites the **data** folder in PCGen with the most re
 
 Due to the process of downloading the entire PCGen repo as a step in this script, it does take a good few minutes to run - the longest it took me was 7 minutes. Your internet speed will be the biggest deciding factor here.
 
+## Table of Contents:
+1) Dependencies
+2) Instructions for Windows
+3) Instructiosn for Linux
+4) Explaining the script functions
+5) Troubleshooting
+
 ## Dependencies
 - **Windows** 
       - No dependencies required. All hail Powershell.
@@ -19,6 +26,12 @@ Due to the process of downloading the entire PCGen repo as a step in this script
 
 3) Run UpdateData.bat
 4) Run UpdateData.bat again when needed.
+### How do I find my PCGen installation folder on Windows?
+If you used the .exe installer from any of the PCGen official releases, the folder will most likely be located in
+
+ `C:\Users\[User]\AppData\Local\PCGen\` in a folder likely titled `6.08.00RC8` or `6.09.05` (depending on which version of PCGen you're using)
+
+To confirm this though, find your PCGen shortcut, right click on it and click on Open File Location like this:![Untitled](https://user-images.githubusercontent.com/66367898/181310848-88d1f6fa-12dd-44ce-82ee-51e0b06d4b1e.png)
 
 ## Instructions (Linux)
 1) Download the [UpdateData.sh script file](https://raw.githubusercontent.com/BlyatBeauty/PCGen-Data-Updater/main/UpdateData.sh) and place it ***directly*** in your PCGen folder.
@@ -29,13 +42,6 @@ Due to the process of downloading the entire PCGen repo as a step in this script
 3) Run UpdateData.sh followed by the variables for your temporary directory and your main pcgen directory 
 ![image](https://user-images.githubusercontent.com/66367898/178808020-3ddbef30-2647-4119-8ee0-03a5566b77b6.png) like this
 4) Run UpdateData.sh again when needed.
-
-## How do I find my PCGen installation folder on Windows?
-If you used the .exe installer from any of the PCGen official releases, the folder will most likely be located in
-
- `C:\Users\[User]\AppData\Local\PCGen\` in a folder likely titled `6.08.00RC8` or `6.09.05` (depending on which version of PCGen you're using)
-
-To confirm this though, find your PCGen shortcut, right click on it and click on Open File Location like this:![Untitled](https://user-images.githubusercontent.com/66367898/181310848-88d1f6fa-12dd-44ce-82ee-51e0b06d4b1e.png)
 
 ## Ok but what does the script do:
 ### On Windows, the script 
