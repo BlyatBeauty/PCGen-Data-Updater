@@ -6,11 +6,11 @@ This script updates and overwrites the **data** folder in PCGen with the most re
 Due to the process of downloading the entire PCGen repo as a step in this script, it does take a good few minutes to run - the longest it took me was 7 minutes. Your internet speed will be the biggest deciding factor here.
 
 ## Table of Contents:
-1) Dependencies
-2) Instructions for Windows
-3) Instructiosn for Linux
-4) Explaining the script functions
-5) Troubleshooting
+1) [Dependencies](https://github.com/BlyatBeauty/PCGen-Data-Updater#dependencies)
+2) [Instructions for Windows](https://github.com/BlyatBeauty/PCGen-Data-Updater#instructions-windows)
+3) [Instructions for Linux](https://github.com/BlyatBeauty/PCGen-Data-Updater#instructions-linux)
+4) [Explaining the script functions](https://github.com/BlyatBeauty/PCGen-Data-Updater#ok-but-what-does-the-script-do)
+5) [Troubleshooting](https://github.com/BlyatBeauty/PCGen-Data-Updater#troubleshooting)
 
 ## Dependencies
 - **Windows** 
