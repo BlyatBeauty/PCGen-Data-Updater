@@ -58,9 +58,24 @@ Line 4) Cleans up after itself, deleting the PCGen master repo from your system.
 3) Uses rsync to copy over the data folder from the checkout to your PCGen directory. It will overwrite existing files with the same name but should preserve files that do not appear in the repo (aka any homebrew you may have made). **Remember to keep backups of your homebrew just in case**
       
 ## Troubleshooting
-1) Windows/Linux, Make sure the script is placed directly in your PCGen folder. If it is in a subfolder, the script will not run correctly.
-2) Windows: Windows Defender flagged the bat script: Yeah, that'll happen on some systems. I imagine it's because of the PowerShell commands. Either go to advanced options and run it anyways or copy the raw text into notepad on your system, then save it as a bat script - effectively making it local to your machine.
-3) For Linux users, make sure that you have the appropriate permissions to run the script.
-4) For Linux users, use bash to run the script (**bash UpdateData.sh**)
-5) For Linux users, ensure that you are using the correct paths as your variables.
-6) For Linux users, ensure that the paths you're using don't have spaces in the name. Spare yourselves from the headache that we experienced figuring that one out. Even with quotes, Rsync just struggles with spaces in your paths.
+
+### Windows
+1) Make sure the `.bat` script is placed directly in your PCGen folder. If it is in a subfolder, the script will not run correctly.
+2) **The script doesn't run!** 
+
+There are a few reasons why it wouldn't run. Maybe because Windows Defender, or some antivirus flagged it; or maybe your some other process blocked it because it's a file downloaded from the internet. It's a common enough issue I heard from others - I imagine it's because of the PowerShell commands in the script. Regardless, I can think of 2 solutions here:
+
+- **Go to your antivirus software's advanced options and exclude the script** - effectively whitelisting it<br>or<br> 
+- **Copy the raw text into notepad on your system, then save it as a .bat file** - effectively making it local to your machine
+![image](https://user-images.githubusercontent.com/66367898/204911417-86b80f9d-008b-40d2-88c0-961e2ba4d1d7.png)<br>
+![image](https://user-images.githubusercontent.com/66367898/204911746-3714f262-cd0a-4d91-8c21-091af0ae11c2.png)<br>
+![image](https://user-images.githubusercontent.com/66367898/204912219-6d0ec62f-e862-44f9-9e0b-a8fb011ab107.png)<br>
+![image](https://user-images.githubusercontent.com/66367898/204912242-4bf8ac8c-490c-46c9-902d-7263df204356.png)<br>
+Save this file **directly to your PCGen folder** and run it from there.
+
+### Linux
+1) Make sure the `.sh` script is placed directly in your PCGen folder. If it is in a subfolder, the script will not run correctly.
+2) Make sure that you have the appropriate permissions to run the script (**chmod u+x UpdateData.sh**)
+3) Use bash to run the script (**bash UpdateData.sh**) - especially useful if you don't use bash as your primary shell.
+4) Ensure that you are using the correct paths as your variables.
+5) Ensure that the paths you are using don't have spaces in the name. Spare yourselves from the headache that we experienced figuring that one out. Even with quotes, Rsync just struggles with spaces in your paths.
