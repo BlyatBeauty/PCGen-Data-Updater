@@ -19,6 +19,7 @@ Due to the process of downloading the entire PCGen repo as a step in this script
       - Git, Rsync
       
 ## Instructions (Windows)
+### UpdateData.bat
 1) Find your PCGen installation folder (see below)
 2) Download the [UpdateData.bat script file](https://raw.githubusercontent.com/BlyatBeauty/PCGen-Data-Updater/main/UpdateData.bat) and place it ***directly*** in your PCGen folder. Remember to save it as a .bat file and not a .txt!
 
@@ -26,12 +27,31 @@ Due to the process of downloading the entire PCGen repo as a step in this script
 
 3) Run UpdateData.bat
 4) Run UpdateData.bat again when needed.
+
+### UpdateData.ps1
+
+This is a PowerShell-only version of the UpdateData script. If the UpdateData.bat script isn't working for you, this one may work better, but requires some more tinkering in advance.
+
+1) Make sure you can run PowerShell scripts! 
+      In your PowerShell terminal, run `Get-ExecutionPolicy`<br>
+      If you see your terminal return "Restricted", then run `set-executionpolicy remotesigned`<br>
+      If you see your terminal return "RemoteSigned" or "Unrestricted" then your PowerShell is ready to run scripts.
+
+2) Download [UploadData.ps1](https://raw.githubusercontent.com/BlyatBeauty/PCGen-Data-Updater/main/UpdateData.ps1) and place it ***directly*** in your PCGen folder. Remember to save it as a .ps1 file and not a .txt!
+
+
+      - If you're struggling to download it, right click on the hyperlink, then left click on Save Link As or Save File As or Save Page As (depending on your browser)
+
+3) Right-click on UploadData.ps1 and press "Run with PowerShell"
+
+
 ### How do I find my PCGen installation folder on Windows?
 If you used the .exe installer from any of the PCGen official releases, the folder will most likely be located in
 
  `C:\Users\[User]\AppData\Local\PCGen\` in a folder likely titled `6.08.00RC8` or `6.09.05` (depending on which version of PCGen you're using)
 
 To confirm this though, find your PCGen shortcut, right click on it and click on Open File Location like this:![Untitled](https://user-images.githubusercontent.com/66367898/181310848-88d1f6fa-12dd-44ce-82ee-51e0b06d4b1e.png)
+
 
 ## Instructions (Linux)
 1) Download the [UpdateData.sh script file](https://raw.githubusercontent.com/BlyatBeauty/PCGen-Data-Updater/main/UpdateData.sh) and place it ***directly*** in your PCGen folder.
