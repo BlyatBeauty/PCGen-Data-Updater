@@ -14,7 +14,7 @@ Due to the process of downloading the entire PCGen repo as a step in this script
 
 ## Dependencies
 - **Windows** 
-      - No dependencies required. All hail Powershell.
+      - No dependencies required. All hail PowerShell.
 - **Linux**
       - Git, Rsync
       
