@@ -32,18 +32,22 @@ Due to the process of downloading the entire PCGen repo as a step in this script
 
 This is a PowerShell-only version of the UpdateData script. If the UpdateData.bat script isn't working for you, this one may work better, but requires some more tinkering in advance.
 
-1) Make sure you can run PowerShell scripts! 
+1) Make sure you have the most recent version of [PowerShell](https://github.com/PowerShell/PowerShell/releases/)
+
+2) Make sure you can run PowerShell scripts! 
       In your PowerShell terminal, run `Get-ExecutionPolicy`<br>
       If you see your terminal return "Restricted", then run `set-executionpolicy remotesigned`<br>
       If you see your terminal return "RemoteSigned" or "Unrestricted" then your PowerShell is ready to run scripts.
 
-2) Download [UploadData.ps1](https://raw.githubusercontent.com/BlyatBeauty/PCGen-Data-Updater/main/UpdateData.ps1) and place it ***directly*** in your PCGen folder. Remember to save it as a .ps1 file and not a .txt!
+3) Download [UpdateData.ps1](https://raw.githubusercontent.com/BlyatBeauty/PCGen-Data-Updater/main/UpdateData.ps1) and place it ***directly*** in your PCGen folder. Remember to save it as a .ps1 file and not a .txt!
 
 
       - If you're struggling to download it, right click on the hyperlink, then left click on Save Link As or Save File As or Save Page As (depending on your browser)
 
-3) Right-click on UploadData.ps1 and press "Run with PowerShell"
+4) Right-click on UpdateData.ps1 and press "Run with PowerShell"<br>
+      This part's important. In my experience, simply left clicking on a .ps1 file opens it in a text editor. You need to specify to your computer that you wish to actually run the script.
 
+5) Run UpdateData.ps1 again as needed
 
 ### How do I find my PCGen installation folder on Windows?
 If you used the .exe installer from any of the PCGen official releases, the folder will most likely be located in
@@ -83,7 +87,7 @@ Line 4) Cleans up after itself, deleting the PCGen master repo from your system.
 1) Make sure the `.bat` script is placed directly in your PCGen folder. If it is in a subfolder, the script will not run correctly.
 2) **The script doesn't run!** 
 
-There are a few reasons why it wouldn't run. Maybe because Windows Defender, or some antivirus flagged it; or maybe your some other process blocked it because it's a file downloaded from the internet. It's a common enough issue I heard from others - I imagine it's because of the PowerShell commands in the script. Regardless, I can think of 2 solutions here:
+There are a few reasons why it wouldn't run. Maybe because Windows Defender, or some antivirus flagged it; or maybe some other process blocked it because it's a file downloaded from the internet. It's a common enough issue I heard from others - I imagine it's because of the PowerShell commands in the script. Regardless, I can think of 2 solutions here:
 
 - **Go to your antivirus software's advanced options and exclude the script** - effectively whitelisting it<br>or<br> 
 - **Copy the raw text into notepad on your system, then save it as a .bat file** - effectively making it local to your machine
