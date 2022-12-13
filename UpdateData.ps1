@@ -11,8 +11,6 @@ Remove-Item -Path ".\pcgen-master" -Recurse
 Remove-Item -Path ($LocalPath + $File) -Force
 Invoke-WebRequest ($Url2 + $File) -OutFile ($LocalPath + $File)
 Expand-Archive -Path ($LocalPath + $File) -DestinationPath $LocalPath
-Copy-Item -Path $Bahamut -Destination $LocalPath -Recurse -PassThru -Force
+Copy-Item -Path $Bahamut -Destination $LocalPath -Exclude *.txt, *.md, .gitattributes, .gitignore -Recurse -PassThru -Force
 Remove-Item -Path ".\pcgen-master" -Recurse
 Remove-Item -Path ($LocalPath + $File) -Force
-Remove-Item -Path $LocalPath .gitattributes -Force
-Remove-Item -Path $LocalPath .gitignore -Force
