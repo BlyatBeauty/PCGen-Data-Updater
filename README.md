@@ -1,7 +1,9 @@
 # PCGen Data Updater
 A script to fetch the most recent sourcebook data for PCGen.
 
-This script updates and overwrites the **data** folder in PCGen with the most recent version from the PCGen Github but preserves any files you may have added in the *homebrew* or *customsources* subfolders. You should back those folders up just in case though.
+This script updates and overwrites the **data** folder in PCGen with the most recent version from the PCGen GitHub but preserves any files you may have added in the *homebrew* or *customsources* subfolders. You should back those folders up just in case though.
+
+By demand from the PCGen discord server, the script will also fetch [BahamutDragon's PCGen Sources](https://github.com/BahamutDragon/pcgen). These are all the sources that PCGen is not allowed to ship with due to OGL.
 
 Due to the process of downloading the entire PCGen repo as a step in this script, it does take a good few minutes to run - the longest it took me was 7 minutes. Your internet speed will be the biggest deciding factor here.
 
