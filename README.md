@@ -75,7 +75,7 @@ Lines 1 and 2) Downloads the PCGen master repo into your pcgen folder (this is u
 
    - The repo is downloaded as a zip file. The script download then extracts the zip file using PowerShell.
 
-Line 3) Copies the *data* folder from the repo it just downloaded to your pcgen folder. it will overwrite existing files with the same name but should preserve files that do not appear in the repo (aka any homebrew you may have made). **Remember to keep backups of your homebrew just in case**
+Line 3) Copies the *data* folder from the repo it just downloaded to your pcgen folder. it will overwrite existing files with the same name but should preserve files that do not appear in the repo (aka any homebrew you may have made). **Remember to keep backups of your homebrew just in case.**
 
 Line 4) Cleans up after itself, deleting the PCGen master repo from your system.
 
@@ -85,15 +85,15 @@ I am intending to make a more efficient version of the Windows scripts that act 
 ### On Linux, the script is a bit more efficient:
 1) Uses git to make a checkout of the PCGen and BahamutDragon repos if they do not exist already. 
 2) Checks for updates between your local checkout and the main repo - keeping your checkout fully up-to-date.
-3) Uses rsync to copy over the data folder from the checkout to your PCGen directory. It will overwrite existing files with the same name but should preserve files that do not appear in the repo (aka any homebrew you may have made). **Remember to keep backups of your homebrew just in case**
+3) Uses rsync to copy over the data folder from the checkout to your PCGen directory. It will overwrite existing files with the same name but should preserve files that do not appear in the repo (aka any homebrew you may have made). **Remember to keep backups of your homebrew just in case.**
       
 ## Troubleshooting
 
 ### Windows
-1) Make sure the `.bat` script is placed directly in your PCGen folder. If it is in a subfolder, the script will not run correctly.
-2) **The script doesn't run!** 
+**The script doesn't run!** 
 
-There are a few reasons why it wouldn't run. Maybe because Windows Defender, or some antivirus flagged it; or maybe some other process blocked it because it's a file downloaded from the internet. It's a common enough issue I heard from others - I imagine it's because of the PowerShell commands in the script. Regardless, I can think of 2 solutions here:
+There are a few reasons why it wouldn't run. The most common reason is because it's in the wrong location. Make sure the `.bat` script is placed directly in your PCGen folder. If it is in a subfolder, the script will not run correctly. If that hasn't fixed your issue, read on. <br>
+Another possible reason that the script didn't run could be that Windows Defender, or some antivirus flagged it; or maybe some other process blocked it because it's a file downloaded from the internet. It's a common enough issue I heard from others - I imagine it's because of the PowerShell commands in the script. Regardless, I can think of 2 solutions here:
 
 - **Go to your antivirus software's advanced options and exclude the script** - effectively whitelisting it<br>or<br> 
 - **Copy the raw text into notepad on your system, then save it as a .bat file** - effectively making it local to your machine
@@ -102,6 +102,8 @@ There are a few reasons why it wouldn't run. Maybe because Windows Defender, or 
 ![image](https://user-images.githubusercontent.com/66367898/204912219-6d0ec62f-e862-44f9-9e0b-a8fb011ab107.png)<br>
 ![image](https://user-images.githubusercontent.com/66367898/204912242-4bf8ac8c-490c-46c9-902d-7263df204356.png)<br>
 Save this file **directly to your PCGen folder** and run it from there.
+
+If making a local version of the `.bat` file hasn't helped, I suggest you try running the `.ps1` version of the script.
 
 ### Linux
 1) Make sure the `.sh` script is placed directly in your PCGen folder. If it is in a subfolder, the script will not run correctly.
