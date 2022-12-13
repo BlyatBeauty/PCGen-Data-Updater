@@ -78,9 +78,13 @@ Lines 1 and 2) Downloads the PCGen master repo into your pcgen folder (this is u
 Line 3) Copies the *data* folder from the repo it just downloaded to your pcgen folder. it will overwrite existing files with the same name but should preserve files that do not appear in the repo (aka any homebrew you may have made). **Remember to keep backups of your homebrew just in case**
 
 Line 4) Cleans up after itself, deleting the PCGen master repo from your system.
+
+Lines 5-12) Does the same thing but for BahamutDragon's sources.
+
+I am intending to make a more efficient version of the Windows scripts that act like the Linux version, using git to checkout and keep your data folder up to date with the repo. It's on my to-do list, I swear.
 ### On Linux, the script is a bit more efficient:
-1) Uses git to make a checkout of the PCGen repo if one does not exist already. 
-2) Checks for updates between your local checkout and the main PCGen repo - keeping your checkout fully up-to-date.
+1) Uses git to make a checkout of the PCGen and BahamutDragon repos if they do not exist already. 
+2) Checks for updates between your local checkout and the main repo - keeping your checkout fully up-to-date.
 3) Uses rsync to copy over the data folder from the checkout to your PCGen directory. It will overwrite existing files with the same name but should preserve files that do not appear in the repo (aka any homebrew you may have made). **Remember to keep backups of your homebrew just in case**
       
 ## Troubleshooting
