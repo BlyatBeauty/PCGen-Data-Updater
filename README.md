@@ -70,20 +70,17 @@ To confirm this though, find your PCGen shortcut, right click on it and click on
 4) Run UpdateData.sh again when needed.
 
 ## Ok but what does the script do:
-### On Windows, the script 
-Lines 1 and 2) Downloads the PCGen master repo into your pcgen folder (this is usually the slowest part of the script)
-
-   - The repo is downloaded as a zip file. The script download then extracts the zip file using PowerShell.
-
-Line 3) Copies the *data* folder from the repo it just downloaded to your pcgen folder. it will overwrite existing files with the same name but should preserve files that do not appear in the repo (aka any homebrew you may have made). **Remember to keep backups of your homebrew just in case.**
-
-Line 4) Cleans up after itself, deleting the PCGen master repo from your system.
-
-Lines 5-12) Does the same thing but for BahamutDragon's sources.
+### Windows
+1) Downloads the latest data sources from [my data repo](https://github.com/BlyatBeauty/PCGen-Data) - which automatically grabs the latest data packs from [PCGen](https://github.com/PCGen/pcgen) and [BahamutDragon](https://github.com/BahamutDragon/pcgen) as a zip file.
+2) Extracts the zip file
+3) Copies over all files and directories from my repo to your PCGen root folder. It will overwrite existing files with the same name but should preserve files that do not appear in the repo (aka any homebrew you may have made). **Remember to keep backups of your homebrew just in case.**
+4) Cleans up after itself, deleting the temporary files it generates off your system.
 
 I am intending to make a more efficient version of the Windows scripts that act like the Linux version, using git to checkout and keep your data folder up to date with the repo. It's on my to-do list, I swear.
-### On Linux, the script is a bit more efficient:
-1) Uses git to make a checkout of the PCGen and BahamutDragon repos if they do not exist already. 
+
+### Linux
+On Linux, the script is a bit more efficient:
+1) Uses git to make a checkout of my data repo 
 2) Checks for updates between your local checkout and the main repo - keeping your checkout fully up-to-date.
 3) Uses rsync to copy over the data folder from the checkout to your PCGen directory. It will overwrite existing files with the same name but should preserve files that do not appear in the repo (aka any homebrew you may have made). **Remember to keep backups of your homebrew just in case.**
       
