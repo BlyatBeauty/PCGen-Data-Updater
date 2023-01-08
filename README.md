@@ -5,7 +5,7 @@ This script updates and overwrites the **data** folder in PCGen with the most re
 
 By demand from the [PCGen discord server](https://discord.gg/M7GH5BS), the script will also fetch [BahamutDragon's PCGen Sources](https://github.com/BahamutDragon/pcgen). These are all the sources that PCGen is not allowed to ship with due to OGL.
 
-Due to the process of downloading the entire PCGen repo as a step in this script, it does take a good few minutes to run - the longest it took me was 7 minutes. Your internet speed will be the biggest deciding factor here.
+Just as a heads up, this script does take a good few minutes to run - the longest it took me was 7 minutes. Your internet speed will probably be the biggest deciding factor here.
 
 ## Table of Contents:
 1) [Dependencies](https://github.com/BlyatBeauty/PCGen-Data-Updater#dependencies)
