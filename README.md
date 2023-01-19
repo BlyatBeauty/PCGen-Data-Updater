@@ -57,11 +57,13 @@ If you used the .exe installer from any of the PCGen official releases, the fold
 
  `C:\Users\[User]\AppData\Local\PCGen\` in a folder likely titled `6.08.00RC8` or `6.09.05` (depending on which version of PCGen you're using)
 
-To confirm this though, open CMD and run the following command:
+To confirm this though, open CMD and run the following commands (wait for the first one to finish before you run the second one):
 
-`for /f %i in ('dir D:\ /b /s ^| FIND "pcgen.exe"') do set place=%i && cd /d %place:pcgen.exe=%  && explorer.exe %place:pcgen.exe=% &&  exit`
+-     for /f %i in ('dir C:\ /b /s ^| FIND "pcgen.exe"') do set place=%i
 
-This command will find and open your PCGen installation folder.
+-     explorer.exe %place:pcgen.exe=%
+
+This command sequence will find and open your PCGen installation folder.
 
 PS: If you have multiple drives in your system, you can modify this command to search whichever drive(s) you think pcgen might be in, by adding other locations after `dir C:\`.
 
