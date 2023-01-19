@@ -57,18 +57,13 @@ If you used the .exe installer from any of the PCGen official releases, the fold
 
  `C:\Users\[User]\AppData\Local\PCGen\` in a folder likely titled `6.08.00RC8` or `6.09.05` (depending on which version of PCGen you're using)
 
-To confirm this though, open PowerShell and run the following command:
+To confirm this though, open CMD and run the following command:
 
-`gci -Path C:\Users\ -Recurse -Include "pcgen.exe" -ErrorAction SilentlyContinue`
+`FOR /f %i in ('dir C:\ /b /s ^| FIND "pcgen.exe"') do set place=%i && cd /d %place:pcgen.exe=%  && explorer.exe %place:pcgen.exe=%`
 
-The output should look like this:
+This command will find and open your PCGen installation folder
 
-![image](https://user-images.githubusercontent.com/66367898/213487877-3453533c-3d56-47a8-8c25-392a272cd200.png)
-
-
-As you can see, in my case the output shows `Directory: D:\Documents\PCGen\6.08.00RC8` so I would download the scripts to `D:\Documents\PCGen\6.08.00RC8`
-
-PS: If you have multiple drives in your system, you can modify this command to search whichever drive(s) you think pcgen might be in, by adding a comma after `-Path C:\Users\`.
+PS: If you have multiple drives in your system, you can modify this command to search whichever drive(s) you think pcgen might be in, by adding other locations after `dir C:\`.
 
 ## Instructions (Linux)
 1) Download the [UpdateData.sh script file](https://raw.githubusercontent.com/BlyatBeauty/PCGen-Data-Updater/main/UpdateData.sh) and place it ***directly*** in your PCGen folder.
