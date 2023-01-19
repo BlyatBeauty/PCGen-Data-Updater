@@ -61,7 +61,7 @@ To confirm this though, open CMD and run the following command:
 
 `FOR /f %i in ('dir C:\ /b /s ^| FIND "pcgen.exe"') do set place=%i && cd /d %place:pcgen.exe=%  && explorer.exe %place:pcgen.exe=%`
 
-This command will find and open your PCGen installation folder
+This command will find and open your PCGen installation folder.
 
 PS: If you have multiple drives in your system, you can modify this command to search whichever drive(s) you think pcgen might be in, by adding other locations after `dir C:\`.
 
