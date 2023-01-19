@@ -9,7 +9,8 @@ Just as a heads up, this script does take a good few minutes to run - the longes
 
 ## Table of Contents:
 1) [Dependencies](https://github.com/BlyatBeauty/PCGen-Data-Updater#dependencies)
-2) [Instructions for Windows](https://github.com/BlyatBeauty/PCGen-Data-Updater#instructions-windows)
+2) [Instructions for Windows](https://github.com/BlyatBeauty/PCGen-Data-Updater#instructions-windows)<br>
+2.5) [Finding my PCGen Installation folder](https://github.com/BlyatBeauty/PCGen-Data-Updater#how-do-i-find-my-pcgen-installation-folder-on-windows)
 3) [Instructions for Linux](https://github.com/BlyatBeauty/PCGen-Data-Updater#instructions-linux)
 4) [Explaining the script functions](https://github.com/BlyatBeauty/PCGen-Data-Updater#ok-but-what-does-the-script-do)
 5) [Troubleshooting](https://github.com/BlyatBeauty/PCGen-Data-Updater#troubleshooting)
@@ -56,8 +57,15 @@ If you used the .exe installer from any of the PCGen official releases, the fold
 
  `C:\Users\[User]\AppData\Local\PCGen\` in a folder likely titled `6.08.00RC8` or `6.09.05` (depending on which version of PCGen you're using)
 
-To confirm this though, find your PCGen shortcut, right click on it and click on Open File Location like this:![Untitled](https://user-images.githubusercontent.com/66367898/181310848-88d1f6fa-12dd-44ce-82ee-51e0b06d4b1e.png)
+To confirm this though, open PowerShell and run the following command:
 
+`gdr -PSProvider 'FileSystem' | %{ ls -r $_.root} 2>$null | where { $_.name -eq "pcgen.exe" }`
+
+The output should look like this:
+
+![image](https://user-images.githubusercontent.com/66367898/213357546-a739c230-3477-4a60-8af7-cb6ec2c7f330.png)
+
+As you can see, in my case the output shows `Directory: D:\Documents\PCGen\6.08.00RC8` so I would download the scripts to `D:\Documents\PCGen\6.08.00RC8`
 
 ## Instructions (Linux)
 1) Download the [UpdateData.sh script file](https://raw.githubusercontent.com/BlyatBeauty/PCGen-Data-Updater/main/UpdateData.sh) and place it ***directly*** in your PCGen folder.
