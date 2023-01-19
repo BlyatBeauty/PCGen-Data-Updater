@@ -59,7 +59,7 @@ If you used the .exe installer from any of the PCGen official releases, the fold
 
 To confirm this though, open CMD and run the following command:
 
-`FOR /f %i in ('dir D:\ /b /s ^| FIND "pcgen.exe"') do set place=%i && cd /d %place:pcgen.exe=%  && explorer.exe %place:pcgen.exe=% `
+`for /f %i in ('dir D:\ /b /s ^| FIND "pcgen.exe"') do set place=%i && cd /d %place:pcgen.exe=%  && explorer.exe %place:pcgen.exe=% &&  exit`
 
 This command will find and open your PCGen installation folder.
 
