@@ -55,7 +55,7 @@ This is a PowerShell-only version of the UpdateData script. If the UpdateData.ba
 ### How do I find my PCGen installation folder on Windows?
 If you used the .exe installer from any of the PCGen official releases, the folder will most likely be located in
 
- `C:\Users\[User]\AppData\Local\PCGen\` in a folder likely titled `6.08.00RC8` or `6.09.05` (depending on which version of PCGen you're using)
+ `C:\Users\[User]\AppData\Local\PCGen\` in a folder likely titled `6.08.00RC8` or `6.08.00RC9` or `6.09.05` (depending on which version of PCGen you're using)
 
 To confirm this though, open CMD and run the following commands (wait for the first one to finish before you run the second one):
 
